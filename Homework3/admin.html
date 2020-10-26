@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+  <body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h5 class="my-0 mr-md-auto font-weight-normal"><img class="mb-2" src="./images/zits-logo.png" alt="" width="50" height="39">Zoo Information and Training System</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="index.html">Home</a>
+        <a class="p-2 text-dark" href="admin.html">Admin</a>
+        <a class="p-2 text-dark" href="trainingPortal.html">Training</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="login.html">Sign in</a>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#employees">
+
+                  Employees
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#training">
+
+                  Training Videos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#customers">
+
+                  Customers
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+            <h1 class="h2">Dashboard</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              
+            </div>
+          </div>
+
+
+          <a name="employees"></a><h2>Employees</h2>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Last Name</th>
+                  <th>First Name</th>
+                  <th>Title</th>
+                  <th>Training Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="employees">
+                <tr>
+                  <td>231489</td>
+                  <td>Bushnell</td>
+                  <td>Irv</td>
+                  <td>Janitor</td>
+                  <td>Up-to-Date</td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>432879</td>
+                  <td>Smith</td>
+                  <td>Johnny</td>
+                  <td>Gator Wrangler</td>
+                  <td>Up-to-Date</td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>123989</td>
+                  <td>Johnson</td>
+                  <td>Alice</td>
+                  <td>Snake Milker</td>
+                  <td><a href="#">Expiring Soon</a></td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>345678</td>
+                  <td>Gilberto</td>
+                  <td>Pedro</td>
+                  <td>Training Coordinator</td>
+                  <td>Up-to-Date</td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+                  
+          </div>
+          <a href="" class="btn btn-outline-primary" onclick="alert('Add Employee Clicked')">ADD EMPLOYEE</a><Br><Br>
+            
+          <a name="training"></a><h2>Training Videos</h2>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>Video ID</th>
+                  <th>Category</th>
+                  <th>Description</th>
+                  <th>Last Updated</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="trainVids">
+                <tr>
+                  <td>T001</td>
+                  <td>Koala</td>
+                  <td>Koala Handling - For Zoo Employees</td>
+                  <td>08/16/2018</td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>T002</td>
+                  <td>Koala</td>
+                  <td>Koala Feeding - For Zoo Employees</td>
+                  <td>03/11/2019</td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>T003</td>
+                  <td>Koala</td>
+                  <td>Koala Bathing - For Zoo Employees</td>
+                  <td>01/21/2018</td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>T004</td>
+                  <td>Snake</td>
+                  <td>Snake Handling - For Zoo Employees</td>
+                  <td>09/03/2017</td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>T005</td>
+                  <td>Snake</td>
+                  <td>Snake Feeding - For Zoo Employees</td>
+                  <td>03/19/2018</td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>T006</td>
+                  <td>Snake</td>
+                  <td>Snake Milking - For Zoo Employees</td>
+                  <td>05/27/2016</td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>
+                </tr>
+       
+              </tbody>
+            </table>
+          </div> 
+          <a href="" class="btn btn-outline-primary" onclick="alert('Add Video Clicked')">ADD VIDEO</a><Br><Br>
+            
+          <a name="customers"></a><h2>Customers</h2>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Last Name</th>
+                  <th>First Name</th>
+                  <th>Subscription Level</th>
+                  <th>Member Since</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="employees">
+                <tr>
+                  <td>231489</td>
+                  <td>Black</td>
+                  <td>Clint</td>
+                  <td>Gold</td>
+                  <td>01/12/2004</td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>432879</td>
+                  <td>Brooks</td>
+                  <td>Garth</td>
+                  <td>Silver</td>
+                  <td>02/04/1984</td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>123989</td>
+                  <td>Thumb</td>
+                  <td>Tom</td>
+                  <td>Silver</td>
+                  <td>11/04/1995</td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>345678</td>
+                  <td>Pan</td>
+                  <td>Pedro</td>
+                  <td>Gold</td>
+                  <td>10/10/2001</td>
+                  <td>
+                    <a href="#" class="btn btn-outline-primary">EDIT</a>  
+                    <a href="#" class="btn btn-outline-primary">DELETE</a>
+                  </td>  
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <a href="" class="btn btn-outline-primary" onclick="alert('Add Customer Clicked')">ADD CUSTOMER</a><Br><Br>
+            
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+  
+
+</body></html>

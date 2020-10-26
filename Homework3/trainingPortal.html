@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.0/examples/album/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>ZITS Training Portal</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/album.css" rel="stylesheet">
+  </head>
+
+  <body>
+      
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      
+      <div class="modal-body">
+
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+        <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+        </div>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div> 
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h5 class="my-0 mr-md-auto font-weight-normal"><img class="mb-2" src="./images/zits-logo.png" alt="" width="50" height="39">Zoo Information and Training System</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="index.html">Home</a>
+        <a class="p-2 text-dark" href="admin.html">Admin</a>
+        <a class="p-2 text-dark" href="trainingPortal.html">Training</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="login.html">Sign in</a>
+    </div>
+
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">ZITS Training Portal</h1>
+          <p class="lead text-muted">Watch the training video that is required, in order to print the certificate of completion.</p>
+          
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/koala.png" alt="" width="348" height="225">
+                <div class="card-body">
+                  <p class="card-text">T001 - Handling A Koala - For Zoo Employees.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/oGVdO1d4J9o" data-target="#myModal">
+                      Play Training Video
+                    </button>
+                    <a class="btn btn-outline-primary" href="genCert.php?t=T001">Certificate</a>
+                    </div>
+                    <small class="text-muted">3 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/koala.png" alt="" width="348" height="225">
+                <div class="card-body">
+                  <p class="card-text">T002 - Koala Feeding - For Zoo Employees.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/ixdvCfcbzd4" data-target="#myModal">
+                      Play Training Video
+                    </button>
+                    <a class="btn btn-outline-primary" href="genCert.php?t=T002">Certificate</a>
+                    </div>
+                    <small class="text-muted">3 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/koala.png" alt="" width="348" height="225">
+                <div class="card-body">
+                  <p class="card-text">T003 - Bathing a Koala - For Zoo Employees.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/K_jR7UeW6CM" data-target="#myModal">
+                      Play Training Video
+                    </button>
+                    <a class="btn btn-outline-primary" href="genCert.php?t=T003">Certificate</a>
+                    </div>
+                    <small class="text-muted">3 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+ 
+          </div>
+            
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/snake.png" alt="" width="348" height="225">
+                <div class="card-body">
+                  <p class="card-text">T004 - Handling A Snake - For Zoo Employees.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/zmTWilh45y8" data-target="#myModal">
+                      Play Training Video
+                    </button>
+                    <a class="btn btn-outline-primary" href="genCert.php?t=T004">Certificate</a>
+                    </div>
+                    <small class="text-muted">3 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/snake.png" alt="" width="348" height="225">
+                <div class="card-body">
+                  <p class="card-text">T005 - Snake Feeding - For Zoo Employees.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/15O1fX_YReo" data-target="#myModal">
+                      Play Training Video
+                    </button>
+                    <a class="btn btn-outline-primary" href="genCert.php?t=T005">Certificate</a>
+                    </div>
+                    <small class="text-muted">3 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/snake.png" alt="" width="348" height="225">
+                <div class="card-body">
+                  <p class="card-text">T006 - Milking a Snake - For Zoo Employees.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/oW4wbbO71iI" data-target="#myModal">
+                      Play Training Video
+                    </button>
+                    <a class="btn btn-outline-primary" href="genCert.php?t=T006">Certificate</a>
+                    </div>
+                    <small class="text-muted">3 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+ 
+          </div>    
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="https://getbootstrap.com/docs/4.0/examples/album/#">Back to top</a>
+        </p>
+        <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="https://getbootstrap.com/docs/4.0/">Visit the homepage</a> or read our <a href="https://getbootstrap.com/docs/4.0/getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/holder.min.js"></script>
+      
+      <script type="text/javascript">
+      $(document).ready(function() {
+
+        // Gets the video src from the data-src on each button
+
+        var $videoSrc;  
+        $('.video-btn').click(function() {
+            $videoSrc = $(this).data( "src" );
+        });
+        console.log($videoSrc);
+
+
+
+        // when the modal is opened autoplay it  
+        $('#myModal').on('shown.bs.modal', function (e) {
+
+        // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+        $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+        })
+
+
+
+        // stop playing the youtube video when I close the modal
+        $('#myModal').on('hide.bs.modal', function (e) {
+            // a poor man's stop video
+            $("#video").attr('src',$videoSrc); 
+        }) 
+
+      // document ready  
+      });
+      </script>
+  
+
+<svg xmlns="http://www.w3.org/2000/svg" width="348" height="225" viewBox="0 0 348 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="17" style="font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>
